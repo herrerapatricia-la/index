@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patricia Herrera, PMP - Portfolio & Program Management | Strategic leader with 25+ years driving enterprise transformation, operational excellence, and cross-functional program governance across technology, professional services, and higher learning industries.">
+    <title>Patricia Herrera | Portfolio & Program Leadership</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2c3e50;
+            line-height: 1.6;
+            background: #fafbfc;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a3a52 0%, #2c5282 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 4px solid #d4af37;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        header .title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            opacity: 0.95;
+            margin-bottom: 1rem;
+        }
+
+        header .tagline {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            max-width: 700px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #e0e6ed;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c5282;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #1a3a52;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #d4af37;
+        }
+
+        .summary {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #3d5a73;
+            max-width: 900px;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .expertise-item {
+            background: #f0f7ff;
+            padding: 1.5rem;
+            border-left: 4px solid #d4af37;
+            border-radius: 4px;
+        }
+
+        .expertise-item h3 {
+            color: #2c5282;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .expertise-item p {
+            color: #5a6f82;
+            font-size: 0.95rem;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e0e6ed;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .experience-header h3 {
+            color: #1a3a52;
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+
+        .experience-header .dates {
+            color: #7a8fa3;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .company {
+            color: #2c5282;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item ul {
+            list-style: none;
+            color: #5a6f82;
+            font-size: 0.95rem;
+        }
+
+        .experience-item li {
+            margin-left: 0;
+            padding-left: 0;
+            margin-bottom: 0.6rem;
+        }
+
+        .experience-item li:before {
+            content: "▸ ";
+            color: #d4af37;
+            font-weight: bold;
+            margin-right: 0.6rem;
+        }
+
+        .credentials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .credential-box {
+            background: #f9f5f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 3px solid #d4af37;
+        }
+
+        .credential-box h3 {
+            color: #1a3a52;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .credential-box p {
+            color: #5a6f82;
+            font-size: 0.9rem;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .skill-tag {
+            background: #2c5282;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(135deg, #f0f7ff 0%, #f5f9ff 100%);
+            border: 2px solid #d4af37;
+        }
+
+        .cta-section p {
+            font-size: 1rem;
+            color: #3d5a73;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn {
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-btn.primary {
+            background: #2c5282;
+            color: white;
+        }
+
+        .cta-btn.primary:hover {
+            background: #1a3a52;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(44, 82, 130, 0.3);
+        }
+
+        .cta-btn.secondary {
+            background: #d4af37;
+            color: #1a3a52;
+        }
+
+        .cta-btn.secondary:hover {
+            background: #c9a12d;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+        }
+
+        footer {
+            background: #1a3a52;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header .title {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            main {
+                padding: 1.5rem;
+            }
+
+            .experience-header {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-btn {
+                width: 100%;
+            }
+        }
+
+        .highlight {
+            color: #d4af37;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Patricia Herrera, PMP</h1>
+        <p class="title">Portfolio & Program Management</p>
+        <p class="tagline">Strategic leader with 25+ years driving enterprise transformation, operational excellence, and cross-functional program governance across healthcare, technology, and professional services</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#credentials">Credentials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p class="summary">
+                Strategic portfolio and program leader with a proven track record of translating executive strategy into actionable roadmaps, leading complex multi-million-dollar portfolios, and partnering with executive, clinical, and business leaders to deliver measurable operational and financial outcomes. 
+            </p>
+            <p class="summary" style="margin-top: 1rem;">
+                Expertise spans enterprise portfolio management, digital transformation, PMO governance, product management, organizational change, and cross-functional stakeholder leadership. Certified Project Management Professional (PMP) and authorized trainer, with experience building and scaling high-performing teams across consulting, technology, healthcare, higher education, and professional services environments.
+            </p>
+        </section>
+
+        <section id="expertise">
+            <h2>Core Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <h3>Portfolio & Program Governance</h3>
+                    <p>Portfolio health management, strategic alignment, and governance frameworks across 80+ concurrent engagements representing $150M+ in revenue</p>
+                </div>
+                <div class="expertise-item">
+                    <h3>Digital Transformation</h3>
+                    <p>Enterprise platform modernization, cloud strategy, Salesforce implementation, and scaled SaaS adoption across B2B and B2C segments</p>
+                </div>
+                <div class="expertise-item">
+                    <h3>Product Management & Strategy</h3>
+                    <p>Product vision, roadmapping, market positioning, pricing strategy, and lifecycle management for education and enterprise platforms</p>
+                </div>
+                <div class="expertise-item">
+                    <h3>Operational Excellence</h3>
+                    <p>Scalable process design, cost optimization, vendor management, and cross-functional alignment to drive efficiency and revenue growth</p>
+                </div>
+                <div class="expertise-item">
+                    <h3>Stakeholder Leadership</h3>
+                    <p>Executive partnership, complex negotiations, change leadership, and organizational transformation across global and matrix teams</p>
+                </div>
+                <div class="expertise-item">
+                    <h3>PMO & Delivery Excellence</h3>
+                    <p>PMO governance, delivery methodology, resource planning, and execution discipline to support enterprise-scale initiatives</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Senior Director, Product Management, Education</h3>
+                    <span class="dates">Oct 2025 – Apr 2026</span>
+                </div>
+                <p class="company">National Association of Realtors, Chicago, Illinois</p>
+                <ul>
+                    <li>Established and led product organization to transform management and growth of $7M education portfolio of designations, certifications, and course offerings</li>
+                    <li>Built and mentored cross-functional team of Product Managers to introduce product management discipline, market intelligence, and data-driven pricing strategies</li>
+                    <li>Developed comprehensive product roadmap spanning near-term delivery and long-term innovation initiatives across full product lifecycle</li>
+                    <li>Translated business strategy into platform capabilities supporting LMS replacement, multi-tenant architecture, and scalable user experience</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Senior Program Manager, Ecommerce Portfolio</h3>
+                    <span class="dates">Jul 2023 – Jul 2025</span>
+                </div>
+                <p class="company">Harvard Medical School, Office of External Education, Boston, Massachusetts</p>
+                <ul>
+                    <li>Led $100M ecommerce portfolio across B2C and B2B storefronts on Salesforce Commerce Cloud, managing learner admissions, checkout, and enrollment</li>
+                    <li>Implemented digital intake and onboarding through Salesforce Experience Cloud, increasing conversion by 10% in first quarter following launch</li>
+                    <li>Partnered with finance, legal, and vendors to optimize pricing, packaging, and enterprise checkout flows, improving deal velocity</li>
+                    <li>Managed cross-functional roadmap delivery across product, engineering, marketing, and operations to scale online offerings</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Senior Portfolio Manager, Professional Services</h3>
+                    <span class="dates">Feb 2020 – Jun 2023</span>
+                </div>
+                <p class="company">Amazon Web Services, Chicago, Illinois</p>
+                <ul>
+                    <li>Strategic portfolio health management for 80+ engagements representing ~$150M in revenue and targeting $180M in bookings</li>
+                    <li>Implemented sales mechanisms resulting in 20% year-over-year increase in sales velocity through delivery excellence and optimized sales pursuits</li>
+                    <li>Established repeatable, scalable operational processes to enable efficient customer and partner engagement across AWS services</li>
+                    <li>Partnered with Sales, Partner Management, and Delivery to strengthen renewal and expansion positioning</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Senior Program Manager, Global Transformation</h3>
+                    <span class="dates">Jan 2015 – Mar 2017</span>
+                </div>
+                <p class="company">JLL, Chicago, Illinois</p>
+                <ul>
+                    <li>Led $23M enterprise initiative to modernize corporate real estate technology and data infrastructure across global organization</li>
+                    <li>Established global BI platform and data governance framework; restructured program staffing model reducing project spend by 10%</li>
+                    <li>Managed blended resource demand model spanning business and IT teams with executive governance and C-suite risk oversight</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Additional Leadership Roles</h3>
+                    <span class="dates">2000 – 2015</span>
+                </div>
+                <p class="company">Accenture, Slalom Consulting, TEKsystems, and others</p>
+                <ul>
+                    <li><span class="highlight">Management Consultant (Accenture):</span> Led enterprise finance initiatives, change management, and global development coordination</li>
+                    <li><span class="highlight">Management Consultant (Slalom):</span> Change management lead for MillerCoors joint venture; program manager for Motorola global call center transformation</li>
+                    <li><span class="highlight">Senior Engagement Manager (TEKsystems):</span> Product vision and roadmap for enterprise governance; cross-functional stakeholder leadership</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="credentials">
+            <h2>Education & Certifications</h2>
+            <div class="credentials">
+                <div class="credential-box">
+                    <h3>Project Management Professional (PMP)</h3>
+                    <p>Project Management Institute (PMI) • Jun 2018</p>
+                </div>
+                <div class="credential-box">
+                    <h3>Authorized Training Partner Instructor (ATP-I)</h3>
+                    <p>PMI • Jul 2023 • Teaching PMP prep and program management courses</p>
+                </div>
+                <div class="credential-box">
+                    <h3>B.S., Information Systems</h3>
+                    <p>DePaul University, Chicago, Illinois</p>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 2.5rem; margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 3px solid #d4af37; padding-bottom: 1rem;">Skills & Platforms</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Portfolio Management</span>
+                <span class="skill-tag">Program Leadership</span>
+                <span class="skill-tag">PMO Governance</span>
+                <span class="skill-tag">Product Management</span>
+                <span class="skill-tag">Digital Transformation</span>
+                <span class="skill-tag">Salesforce</span>
+                <span class="skill-tag">Agile & Scrum</span>
+                <span class="skill-tag">Strategic Planning</span>
+                <span class="skill-tag">Change Management</span>
+                <span class="skill-tag">Stakeholder Leadership</span>
+                <span class="skill-tag">Budget Management</span>
+                <span class="skill-tag">P&L Responsibility</span>
+            </div>
+        </section>
+
+        <section id="contact" class="cta-section">
+            <h2 style="border-bottom-color: #2c5282;">Get in Touch</h2>
+            <p>Interested in discussing portfolio leadership, digital transformation, or strategic partnerships?</p>
+            <div class="cta-buttons">
+                <a href="mailto:your-email@example.com" class="cta-btn primary">Send Email</a>
+                <a href="https://linkedin.com/in/yourprofile" class="cta-btn secondary" target="_blank">LinkedIn Profile</a>
+            </div>
+            <p style="font-size: 0.85rem; color: #7a8fa3; margin-top: 1rem;">
+                <em>Note: Update email and LinkedIn URLs before publishing</em>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Patricia Herrera. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
